@@ -1,0 +1,150 @@
+* {
+  font-family: 'Spartan', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+  background-position: center top, center bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.main h1 {
+  line-height: 1em;
+  padding: 2.5em 1em 0em;
+  text-align: center;
+  font-weight: 700;
+  color: #502050;
+}
+
+.main p {
+  padding: 2em 0.5em;
+  text-align: center;
+  color: #937b92;
+}
+
+.ratings ul li {
+  color: #502050;
+  font-weight: 700;
+  list-style: none;
+  font-size: 15px;
+  background: #f7f2f7;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.ratings ul li .rating:before {
+  content: url("../images/icon-star.svg") " " url("../images/icon-star.svg") " " url("../images/icon-star.svg") " " url("../images/icon-star.svg") " " url("../images/icon-star.svg");
+}
+
+.ratings ul li p {
+  padding-top: 0.5em;
+}
+
+.opinions {
+  margin-top: 2.5em;
+}
+
+.opinions .opinion {
+  margin: 1em;
+  background-color: #502050;
+  padding: 2em 1.2em;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.opinions .opinion .author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.opinions .opinion .author .pic img {
+  width: 3em;
+  border-radius: 50%;
+}
+
+.opinions .opinion .author .data {
+  font-size: 1em;
+  margin: 0 2em;
+}
+
+.opinions .opinion .author .data .name {
+  color: #f7f2f7;
+  line-height: 1.25rem;
+}
+
+.opinions .opinion .author .data .description {
+  color: #937b92;
+  line-height: 1.25rem;
+}
+
+.opinions .opinion .message {
+  color: #f7f2f7;
+  font-size: 1em;
+  line-height: 2em;
+  padding-top: 1.8em;
+}
+
+.attribution {
+  font-size: 0.7em;
+  color: #937b92;
+}
+
+.attribution a {
+  color: #502050;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1020px) {
+  body {
+    background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    background-size: unset;
+    /*height: 100vh;*/
+  }
+  .container {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
+    /*border: 1px solid hsl(303, 10%, 53%);*/
+  }
+  .container .main {
+    width: 50%;
+  }
+  .container .ratings {
+    width: 50%;
+  }
+  .container .opinions {
+    width: 100%;
+  }
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+/*# sourceMappingURL=style.css.map */
